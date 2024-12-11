@@ -1,4 +1,4 @@
-export interface Ticket {
+export interface ITicket {
   origin: string;
   origin_name: string;
   destination: string;

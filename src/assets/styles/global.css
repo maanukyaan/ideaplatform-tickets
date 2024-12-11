@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #f1f1f1;
-  --color: #151515;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #151515;
-    --color: #f1f1f1;
-  }
-}
-
 html,
 body,
 #root {
   min-height: 100vh;
   font-family: "Inter";
-  background: var(--background);
-  color: var(--color);
+}
+
+#timeLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  background-image: url("/icons/airplane.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  transform: translateY(50%) rotate(90deg) scale(1.3);
 }
